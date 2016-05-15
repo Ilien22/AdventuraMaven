@@ -17,9 +17,6 @@ public class Inventar {
 
     public void pridej (String vec){ // void říká, že se nevrací nic (jakého typu bude proměnná, kterou budu volat z téhle fce)
                                         // System.out.println(vec); - smazáno
-
-        //konec druhe hodiny
-
         predmety.add(vec);
     }
 

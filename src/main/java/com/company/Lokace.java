@@ -39,7 +39,7 @@ public class Lokace { //důležitý kam můžeme jít a co tam můžeme provád�
     public void odeberPredmet (String predmet) { //odeber predmet z lokace, ne z inventare
         predmety.remove(predmet);
     }
-    public  void pridejPredmet (String predmet){predmety.add(predmet);}
+    public void pridejPredmet (String predmet){predmety.add(predmet);}
 
     public void vypis(){
         if (!predmety.isEmpty() || bytost != null)
@@ -62,6 +62,7 @@ public class Lokace { //důležitý kam můžeme jít a co tam můžeme provád�
         povoleneAkce = new ArrayList<>(povoleneAkce);
         povoleneAkce.remove("utok"); //něco v uvozovkách je instance řetězcejdi
     }
+
 }
 
 

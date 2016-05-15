@@ -13,7 +13,6 @@ public class UtokTest {
 
     @Test
 public void testUtok (){
-        Boj boj = mock(Boj.class);
         Hrdina hrdina = new Hrdina();
         Mapa mapa = new Mapa(hrdina);
         Boj mockBoj = mock (Boj.class);

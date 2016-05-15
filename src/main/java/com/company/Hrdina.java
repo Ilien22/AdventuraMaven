@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.akce.Uloz;
+
 /**
  * Created by Tibor on 3. 4. 2016.
  */
@@ -15,4 +17,11 @@ public class Hrdina extends Bytost {
     public Inventar getInventar() {
         return inventar;
     }
+
+ /*   public String serialize (){
+        getZivoty().serialize();
+        getObrana().serialize();
+        getUtok().serialize();
+        serialize().contains(zivoty(getZivoty()), utok(), obrana(), inventar());
+   } */
 }

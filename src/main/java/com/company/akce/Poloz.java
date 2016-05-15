@@ -27,6 +27,7 @@ public class Poloz extends Akce {
                 predmety.odeber(parametry[1]);
             System.out.println("V ruksaku mám:");
                 predmety.vypis();
+            aktualniLokace.pridejPredmet(parametry[1]);
             }
         else {
             System.out.println("Nefunguje to");

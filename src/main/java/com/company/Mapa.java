@@ -40,6 +40,10 @@ public class Mapa {  //souradnice x,y pole, a kam muzeme jit
         jdiZvedniPolozUtok.add(prikazZvedni.getPrikaz());
         jdiZvedniPolozUtok.add(prikazPoloz.getPrikaz());
         jdiZvedniPolozUtok.add(prikazUtok.getPrikaz());
+        ArrayList predmety2 = new ArrayList();  //provizorně
+        predmety2.add("veverka");
+        predmety2.add("klacek");
+        predmety2.add("trpaslik");
 
 
         ArrayList jdiUtok = new ArrayList();
@@ -49,7 +53,7 @@ public class Mapa {  //souradnice x,y pole, a kam muzeme jit
         povoleneLokace = new HashMap();
         povoleneLokace.put(new Pozice(0, 1), new Lokace(jdiZvedniPolozUtok, new Bytost("Bandita", 5, 2, 1))); //přepsáno add na put, protože Map neumí add
         povoleneLokace.put(new Pozice(1, 0), new Lokace(jdiZvedniPolozUtok, new Bytost("Vlk", 3, 1, 2)));
-        povoleneLokace.put(new Pozice(1, 1), new Lokace(jdiZvedniPolozUtok, new Bytost("Drak", 10,10, 10)));
+        povoleneLokace.put(new Pozice(1, 1), new Lokace(jdiZvedniPolozUtok, new Bytost("Drak", 10,10, 10)) );
         povoleneLokace.put(new Pozice(1, 2), new Lokace(jdiZvedniPolozUtok, new Bytost("Blbeček", 3,1,1)));
         povoleneLokace.put(new Pozice(2, 1), new Lokace(jdiZvedniPolozUtok));
         aktualniPozice = new Pozice(1, 1);
@@ -94,6 +98,9 @@ public class Mapa {  //souradnice x,y pole, a kam muzeme jit
             return aktualniPozice;
 
     }
+ /*   public String serialize (){
+        aktualniPozice.serialize();
+    } */
 }
 
 
